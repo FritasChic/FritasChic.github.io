@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title></title>
+</head>
+<body>
+&lt;?php<br/>
+<br/>
+/*<br/>
+ * Copyright 2015 TheShark34<br/>
+ *<br/>
+ * This file is part of S&ndash;Update&ndash;Server.<br/>
+ *<br/>
+ * S&ndash;Update&ndash;Server is free software: you can redistribute it and/or modify<br/>
+ * it under the terms of the GNU Lesser General Public License as published by<br/>
+ * the Free Software Foundation, either version 3 of the License, or<br/>
+ * (at your option) any later version.<br/>
+ *<br/>
+ * S&ndash;Update&ndash;Server is distributed in the hope that it will be useful,<br/>
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of<br/>
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the<br/>
+ * GNU Lesser General Public License for more details.<br/>
+ *<br/>
+ * You should have received a copy of the GNU Lesser General Public License<br/>
+ * along with S&ndash;Update&ndash;Server.  If not, see &lt;http://www.gnu.org/licenses/&gt;.<br/>
+ */<br/>
+<br/>
+// Checking<br/>
+if(!is_dir(__DIR__ . &#39;/vendor&#39;)) {<br/>
+    echo &quot;&lt;h1&gt;BLEH, il faut telecharger S&ndash;Update&ndash;Server depuis la page release du repo Github !&lt;/h1&gt;&quot;;<br/>
+    echo &quot;&lt;a href=&#39;https://github.com/TheShark34/S&ndash;Update&ndash;Server/releases&#39;&gt;ICI !&lt;/a&gt;&quot;;<br/>
+    die();<br/>
+}<br/>
+<br/>
+// Just loading all<br/>
+require_once __DIR__ . &#39;/vendor/autoload.php&#39;;<br/>
+require_once &quot;src/bootstrap.php&quot;;<br/>
+<br/>
+?&gt;</body></html>
